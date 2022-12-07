@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Project Contest</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="antialiased min-h-screen bg-slate-100 text-slate-800">
+    <header class="text-right p-4">
+      <form id="signOutForm">
+        <button type="submit" class="text-sm text-slate-600">Sign Out</button>
+      </form>
+    </header>
+    <section class="p-4 sm:p-8 mx-auto max-w-2xl">
+      <section>
+        <h1
+          class="text-4xl font-semibold text-center bg-gradient-to-b from-blue-600 to-indigo-600 text-transparent bg-clip-text"
+        >
+          Winner
+        </h1>
+        <section id="winner">
+          <p class="text-center mt-4">Select a project from the list below to accounce as winner.</p>
+        </section>
+      </section>
+      <hr class="my-6" />
+      <h1
+        class="text-4xl font-semibold text-center bg-gradient-to-b from-blue-600 to-indigo-600 text-transparent bg-clip-text"
+      >
+        Projects List
+      </h1>
+      <section id="projects">
+        <div class="p-5 shadow-md bg-white mt-4">
+          <h2 class="text-xl font-bold">Sample project title</h2>
+          <p class="mt-2 text-sm">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, ipsum odit architecto deserunt nisi.
+          </p>
+          <a href="#" class="text-blue-700 text-sm mt-2 block">View project</a>
+          <button class="mt-2 rounded bg-indigo-500 text-white px-4 py-2 text-sm font-bold">Select Winner</button>
+        </div>
+      </section>
+    </section>
+    <script src="/src/js/signout.js" type="module"></script>
+    <script src="/src/js/admin.js" type="module"></script>
+  </body>
+</html>

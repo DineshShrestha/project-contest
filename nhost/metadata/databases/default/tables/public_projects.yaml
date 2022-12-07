@@ -1,0 +1,39 @@
+table:
+  name: projects
+  schema: public
+insert_permissions:
+  - role: public
+    permission:
+      check: {}
+      columns:
+        - description
+        - link
+        - title
+select_permissions:
+  - role: me
+    permission:
+      columns:
+        - description
+        - id
+        - link
+        - title
+        - winner
+      filter: {}
+  - role: public
+    permission:
+      columns:
+        - description
+        - link
+        - title
+        - winner
+      filter:
+        winner:
+          _eq: true
+      limit: 1
+update_permissions:
+  - role: me
+    permission:
+      columns:
+        - winner
+      filter: {}
+      check: {}
